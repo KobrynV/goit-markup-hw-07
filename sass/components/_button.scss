@@ -1,0 +1,42 @@
+.button {
+  border-radius: 4px;
+  /* border: 0.5px solid transparent; */
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  padding: 10px 32px;
+  display: inline-block;
+  /* display: flex; */
+  min-width: 200px;
+  text-align: center;
+  color: $primary-white-color;
+  background-color: $accent-color;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  text-decoration: none;
+}
+
+.button-link {
+  border: 1px solid transparent;
+  padding: 6px 22px;
+  border-radius: 4px;
+  color: $primary-text-color;
+  background-color: #f5f4fa;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+
+  & :hover,
+  & :focus {
+    color: $primary-white-color;
+    background-color: $primary-white-color;
+    background-color: $accent-color;
+  }
+}
+.fly::after {
+  display: flex;
+  content: "";
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+  background-image: url(../images/iconsend.svg);
+}

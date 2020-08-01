@@ -1,0 +1,98 @@
+.main-nav {
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+.site-nav {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 85px;
+  display: flex;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+
+  & .item:not(:last-child) {
+    margin-right: 0;
+    margin-right: 50px;
+  }
+}
+.site-nav .link {
+  position: relative;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: $primary-text-color;
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus,
+  &.current {
+    color: $accent-color;
+  }
+}
+.start:hover:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  background-color: $accent-color;
+  border-radius: 4px;
+}
+.auth-nav {
+  display: flex;
+  padding: 0;
+  margin-top: 0px;
+  margin-bottom: 0;
+  margin-left: 305px;
+
+  & .item + .item {
+    margin-left: 30px;
+  }
+}
+.auth-nav .link {
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: $title-text-color;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  font-style: normal;
+  transition-property: color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    fill: $accent-color;
+  }
+}
+
+.icon-nav {
+  width: 16px;
+  height: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  margin-top: 3px;
+
+  &-smart {
+    width: 10px;
+    height: 15px;
+    content: "";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+  }
+}
